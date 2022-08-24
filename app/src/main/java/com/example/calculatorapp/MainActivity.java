@@ -62,4 +62,27 @@ public class MainActivity extends AppCompatActivity {
 
         numberSumTV.setText("" + quot);
     }
+
+    public void findSquare(View view) {
+        EditText number1ET = findViewById(R.id.num1ET);
+        EditText number2ET = findViewById(R.id.num2ET);
+        TextView numberSumTV = findViewById(R.id.resultTV);
+
+        int num1 = Integer.parseInt((number1ET.getText().toString()));
+        int square = num1 * num1;
+
+        numberSumTV.setText("" + square);
+    }
+
+    public void clearAll(View view){
+        EditText number1ET = findViewById(R.id.num1ET);
+        EditText number2ET = findViewById(R.id.num2ET);
+        TextView numberSumTV = findViewById(R.id.resultTV);
+        
+        String num1 = " ";
+        String num2 = " ";
+        String clear = " ";
+
+        numberSumTV.setText("" + clear);
+    }
 }
