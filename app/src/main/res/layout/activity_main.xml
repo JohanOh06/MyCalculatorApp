@@ -7,33 +7,6 @@
     android:background="#03A9F4"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/num1ET"
-        android:layout_width="166dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Input1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218" />
-
-    <EditText
-        android:id="@+id/num2ET"
-        android:layout_width="170dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="480dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Input2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toEndOf="@+id/num1ET" />
-
     <TextView
         android:id="@+id/resultTV"
         android:layout_width="162dp"
@@ -50,6 +23,7 @@
         android:layout_height="61dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="292dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="findSum"
         android:text="+"
         android:textSize="10pt"
@@ -62,18 +36,21 @@
         android:layout_height="63dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="292dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="findDiff"
         android:text="-"
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="#F8FBFD" />
 
     <Button
         android:id="@+id/findProd"
         android:layout_width="123dp"
         android:layout_height="59dp"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="172dp"
+        android:layout_marginBottom="188dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="findProd"
         android:text="x"
         android:textSize="10pt"
@@ -85,7 +62,8 @@
         android:layout_width="145dp"
         android:layout_height="61dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="172dp"
+        android:layout_marginBottom="188dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="findQuot"
         android:text="/"
         android:textSize="10pt"
@@ -98,6 +76,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="findSquare"
         android:text="^"
         android:textSize="10pt"
@@ -109,11 +88,35 @@
         android:layout_width="130dp"
         android:layout_height="51dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="92dp"
-        android:onClick= "clearAll"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="@color/teal_200"
+        android:onClick="clearAll"
         android:text="C"
-        android:textSize = "10pt"
+        android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/num2ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:hint="Input2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num1ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:hint="Input1"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

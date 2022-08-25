@@ -19,12 +19,14 @@ public class MainActivity extends AppCompatActivity {
         EditText number1ET = findViewById(R.id.num1ET);
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
-
-        int num1 = Integer.parseInt((number1ET.getText().toString()));
-        int num2 = Integer.parseInt((number2ET.getText().toString()));
-        int sum = num1 + num2;
-
-        numberSumTV.setText("" + sum);
+        try {
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
+            double sum = num1 + num2;
+            numberSumTV.setText("" + sum);
+        } catch (Exception e) {
+            numberSumTV.setText("" + "please enter a number");
+        }
     }
 
     public void findDiff(View view) {
@@ -32,11 +34,14 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
 
-        int num1 = Integer.parseInt((number1ET.getText().toString()));
-        int num2 = Integer.parseInt((number2ET.getText().toString()));
-        int diff = num1 - num2;
-
-        numberSumTV.setText("" + diff);
+        try {
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
+            double diff = num1 - num2;
+            numberSumTV.setText("" + diff);
+        } catch (Exception e) {
+            numberSumTV.setText("" + "please enter a number");
+        }
     }
 
     public void findProd(View view) {
@@ -44,11 +49,14 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
 
-        int num1 = Integer.parseInt((number1ET.getText().toString()));
-        int num2 = Integer.parseInt((number2ET.getText().toString()));
-        int prod = num1 * num2;
-
-        numberSumTV.setText("" + prod);
+        try {
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
+            double prod = num1 * num2;
+            numberSumTV.setText("" + prod);
+        } catch (Exception e) {
+            numberSumTV.setText("" + "please enter a number");
+        }
     }
 
     public void findQuot(View view) {
@@ -56,11 +64,14 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
 
-        int num1 = Integer.parseInt((number1ET.getText().toString()));
-        int num2 = Integer.parseInt((number2ET.getText().toString()));
-        int quot = num1 / num2;
-
-        numberSumTV.setText("" + quot);
+        try {
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
+            double quot = num1 / num2;
+            numberSumTV.setText("" + quot);
+        } catch (Exception e) {
+            numberSumTV.setText("" + "please enter a number");
+        }
     }
 
     public void findSquare(View view) {
@@ -68,12 +79,14 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
 
-        int num1 = Integer.parseInt((number1ET.getText().toString()));
-        int square = num1 * num1;
-
-        numberSumTV.setText("" + square);
+        try {
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double square = num1 * num1;
+            numberSumTV.setText("" + square);
+        } catch (Exception e) {
+            numberSumTV.setText("" + "please enter a number");
+        }
     }
-
     public void clearAll(View view){
         EditText number1ET = findViewById(R.id.num1ET);
         EditText number2ET = findViewById(R.id.num2ET);
